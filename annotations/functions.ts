@@ -21,3 +21,15 @@ const throwError = (message: string): void => {
         throw new Error(message);
     }
 };
+
+const logWeather = ({ date, weather }: { date: Date, weather: string }): void => {
+    console.log(date);
+    console.log(weather);
+};
+
+const todaysWeather = {
+    date: new Date(),
+    weather: 'sunny'
+};
+
+logWeather(todaysWeather);
